@@ -1,0 +1,251 @@
+div {
+}
+
+.topo {
+    height: 54px;
+    background-color: #FFFFFF88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.apresentacao {
+    display: flex;
+    width: 935px;
+    justify-content: space-between;
+    height: 30px;
+}
+.esquerda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquerda ion-icon {
+    height: 19.25px;
+    width: 19.25px;
+    margin-right: 8px;
+    padding-right: 8px;
+    border-right: 1px solid #DBDBDB;
+}
+.esquerda img {
+    padding-top: 8px;
+    height: 29px;
+    width: 103px;
+}
+.centro {
+    display: flex;
+    align-items: center;
+}
+.centro .logo {
+    display: none;
+}
+.centro input {
+    text-align: center;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 14px;
+    width: 215px;
+    height: 28px;
+}
+.centro input::placeholder {
+    color:#979797;
+}
+.direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direita ion-icon {
+    height: 18px;
+    width: 18px;
+    margin-left: 16px;
+}
+.corpo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 54px;
+    background-color: #E5E5E5;
+}
+.lateral {
+    width: 293px;
+    height: 480px;
+    margin-top: 34px;
+    background-color: #FFF;
+}
+.preenchimento {
+    width: 28px;
+}
+.principal {
+    width: 614px;
+}
+
+.stories {
+    width: 614px;
+    height: 118px;
+    margin-top: 34px;
+    background-color: #FFF;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.story {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    margin: 18px 0 0 13px;
+}
+.story > div {
+    height: 68px;
+    width: 66px;
+    background-image: url("/arqv/stories_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 66px 66px;
+    background-repeat: no-repeat;
+}
+.story img{
+    height: 56px;
+    width: 56px;
+    border-radius: 100%;
+    margin-top: -2px;
+}
+.story p {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 16px;
+}
+
+.seta {
+    position: absolute;
+    bottom: 35%;
+    right: 7px;
+    color: #FFF;
+    font-size: 25px;
+}
+.posts {
+    margin-top: 20px;
+}
+.cabeca {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.esq {
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+}
+.esq img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.dir {
+    display: flex;
+    align-items: center;
+    margin-right: 17px;
+}
+.post {
+        height: 549px;  
+        margin-top: 60px;
+        background-color: #FFF;
+}
+.imagem img{
+    width: 100%;
+}
+.post:first-child {
+    margin-top: 0;
+}
+.interacao {
+    display: flex;
+    justify-content: space-between;
+}
+.interacao > div {
+    display: flex;
+}
+.comentario {
+    display: flex;
+}
+.comentario img {
+    height: 15px;
+    width: 15px;
+}
+.rodape {
+    display: none;
+}
+@media (max-width: 935px) {
+	.principal {
+	}
+    .lateral {
+        display: none;
+    }
+    .preenchimento {
+        display: none;
+    }
+    .esquerda {
+        margin-left: 20px;
+    }
+    .direita {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 614px) {
+	.principal {
+        width: 100%;
+	}
+    
+    .corpo{
+        margin-bottom: 54px;
+    }
+
+    .esquerda div:last-child {
+        display: none;
+    }
+
+    .esquerda ion-icon {
+        border-right: 0;
+    }
+    .centro .logo {
+        display: block;
+        padding-top: 8px;
+        height: 29px;
+        width: 103px;
+    }
+    .centro .pesquisar {
+        display: none;
+    }
+    .direita div {
+        display: none;
+    }
+    .direita div:first-child {
+        display: block;
+    }
+
+    .stories {
+        margin-top: 0;
+    }
+    .posts {
+        margin-top: 0;
+    }
+
+    .rodape {
+        display: flex;
+        height: 54px;
+        background-color: #FFFFFF88;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+    }
+}
