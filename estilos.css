@@ -3,6 +3,7 @@
 }
 
 div {
+    
 }
 
 .topo {
@@ -100,15 +101,18 @@ div {
     overflow: hidden;
     position: relative;
 }
+.stories:hover {
+    overflow: visible;
+}
 .story {
     display: flex;
     flex-direction: column;
     height: 90px;
     margin: 18px 0 0 13px;
 }
-.story > div {
+.story div {
     height: 68px;
-    width: 66px;
+    width: 68px;
     background-image: url("/arqv/stories_background.jpg");
     display: flex;
     justify-content: center;
@@ -121,21 +125,30 @@ div {
     width: 56px;
     border-radius: 100%;
     margin-top: -2px;
+    margin-left: -2px;
 }
-.story p {
+.story span {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
     line-height: 16px;
+    background-color: lightgreen;
+    white-space: nowrap;
+    width: 68px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.story span:hover {
+    overflow: visible;
 }
 
-.seta {
+.seta ion-icon{
     position: absolute;
     bottom: 35%;
     right: 7px;
-    color: #FFF;
-    font-size: 25px;
+    font-size: 30px;
 }
+
 .posts {
     margin-top: 20px;
 }
@@ -170,19 +183,38 @@ div {
 .post:first-child {
     margin-top: 0;
 }
+.final {
+   padding: 5px 10px;
+}
 .interacao {
     display: flex;
     justify-content: space-between;
 }
 .interacao > div {
     display: flex;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.interacao ion-icon {
+    font-size: 20px;
+    margin-right: 8px;
 }
 .comentario {
     display: flex;
+    margin-top:10px;
+    margin-left: 5px;
 }
 .comentario img {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
+}
+.comentario span {
+    margin-left: 5px;
+    display: inline-flex;
+    margin-top: 1px;
+}
+.info {
+    font-weight: bold;
 }
 .rodape {
     display: none;
