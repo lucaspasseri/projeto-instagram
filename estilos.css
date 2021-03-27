@@ -16,7 +16,7 @@ body {
     left: 0;
     top: 0;
     z-index: 2;
-    border: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
 }
 .apresentacao {
     display: flex;
@@ -403,5 +403,6 @@ a { color: inherit; }
         align-items: center;
         padding:0 20px 0 20px;
         font-size: 20px;
+        border-top: 1px solid #dbdbdb;
     }
 }
