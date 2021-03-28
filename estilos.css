@@ -182,7 +182,7 @@ body {
 .story div {
     height: 68px;
     width: 68px;
-    background-image: url("./arqv/stories_background.jpg");
+    background-image: url("../arqv/stories_background.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
