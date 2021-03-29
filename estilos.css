@@ -214,10 +214,10 @@ a { color: inherit; }
 
 .seta ion-icon{
     position: absolute;
-    bottom: 35%;
+    bottom: 38%;
     right: 7px;
     font-size: 30px;
-
+    fill: #FFF;
 }
 
 .posts {
